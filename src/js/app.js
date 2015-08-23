@@ -26,7 +26,7 @@ var point = function(map,venue) {
         animation: google.maps.Animation.DROP
     }); // end marker
 
-    var contentString = '<div class="infoName">'+ this.name + '</div><div class="infoAdd">Address: ' + this.address +'</div><div class="infoCon">Contact: ' + this.contact + '</div>' + '<a class="infoUrl" href = ' + this.url +'>Click for more info</a>'
+    var contentString = '<div class="infoName">'+ this.name + '</div><div class="infoAdd">Address: ' + this.address +'</div><div class="infoCon">Contact: ' + this.contact + '</div>' + '<a class="infoUrl" href = ' + this.url +'>Click for more info</a>';
     
     this.openInfoWindow = function() {
         infoWindow.setContent(contentString);
@@ -34,8 +34,7 @@ var point = function(map,venue) {
         map.panTo(this.position);
         this.setAnimation(google.maps.Animation.BOUNCE);
         stopAnimation(this);
-
-    }
+    };
 
     // Stop animation after two bounces
     function stopAnimation(marker) {
@@ -45,7 +44,7 @@ var point = function(map,venue) {
     }
 
     google.maps.event.addListener(this.marker,'click', this.openInfoWindow);
-}
+};
 
 // define FourSquare configure object 
 var config = {
@@ -86,7 +85,7 @@ var GoogleMap = function(element,neighborhood) {
     });
 
     return map;
-}
+};
 
 
 /* ViewModel */
@@ -133,13 +132,13 @@ var ViewModel = function() {
 
     // update markers while searching
     self.updateMarkers = ko.computed(function(){
-            for (var i=0; i < self.points().length; i++) {
-                if (self.points()[i].name.toLowerCase().indexOf(self.query().toLowerCase()) <0 ) {
-                    self.points()[i].marker.setVisible(false);
-                } else {
-                    self.points()[i].marker.setVisible(true);
-                }
+        for (var i=0; i < self.points().length; i++) {
+            if (self.points()[i].name.toLowerCase().indexOf(self.query().toLowerCase()) <0 ) {
+                self.points()[i].marker.setVisible(false);
+            } else {
+                self.points()[i].marker.setVisible(true);
             }
+        }
     });
 
 }; // end ViewModel
