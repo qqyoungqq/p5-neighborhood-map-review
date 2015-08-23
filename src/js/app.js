@@ -26,7 +26,7 @@ var point = function(map,venue) {
         animation: google.maps.Animation.DROP
     }); // end marker
 
-    var contentString = '<div id="infoName">'+ this.name + '</div><div id="infoAdd">Address: ' + this.address +'</div><div id="infoCon">Contact: ' + this.contact + '</div>' + '<a id="infoUrl" href = ' + this.url +'>Click for more info</a>'
+    var contentString = '<div class="infoName">'+ this.name + '</div><div class="infoAdd">Address: ' + this.address +'</div><div class="infoCon">Contact: ' + this.contact + '</div>' + '<a class="infoUrl" href = ' + this.url +'>Click for more info</a>'
     
     this.openInfoWindow = function() {
         infoWindow.setContent(contentString);

@@ -21,18 +21,18 @@
 </div>
 <div class="search">  
   <h1>St. Petersburg, FL</h1>
-  <div id="searchBar">
-    <input id="searchInput" data-bind="textInput: query" placeholder="Search for popular places..." autofocus>
+  <div class="searchBar">
+    <input class="searchInput" data-bind="textInput: query" placeholder="Search for popular places..." autofocus>
   </div>
 </div>
-<div id="infoBox">
+<div class="infoBox">
   <h1>Popular places</h1>
   <div>
     <ul data-bind="foreach: search()">
       <li>
-        <p id="placeName" data-bind="text:name,click: $root.clickMarker"></p>
-        <div id="category">Category: <span data-bind="text:category"></span></div> <!-- Add Catogory-->
-        <div id="rate">Rating: <span data-bind="text:rating"></span></div> <!-- Add Rating-->
+        <p class="placeName" data-bind="text:name,click: $root.clickMarker"></p>
+        <div class="category">Category: <span data-bind="text:category"></span></div> <!-- Add Catogory-->
+        <div class="rate">Rating: <span data-bind="text:rating"></span></div> <!-- Add Rating-->  
       </li>
     </ul>
   </div>

@@ -31,7 +31,7 @@ gulp.task('watch',function() {
 	gulp.watch('src/js/*.js',['minify-script']);
 	gulp.watch('src/js/lib/*.js',['minify-lib']);
 	gulp.watch('src/css/*.css',['minify-style']);
-	gulp.watch('src/css/*.html',['minify-html']);
+	gulp.watch('src/*.html',['minify-html']);
 });
 
 gulp.task('default',['minify-html','minify-style','minify-script','minify-lib','watch']);
