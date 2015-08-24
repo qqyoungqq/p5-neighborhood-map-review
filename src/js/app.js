@@ -102,7 +102,7 @@ var ViewModel = function() {
     // trigger animation when a marker is clicked and the map pan to that clicked marker
     self.clickMarker = function(clickedPlace) {           
         var placeName = clickedPlace.name.toLowerCase();
-        for (var i = 0; i<self.points().length; i++) {
+        for (var i = 0, len = self.points().length; i<len; i++) {
             if (self.points()[i].name.toLowerCase() === placeName.toLowerCase()) {
                 google.maps.event.trigger(self.points()[i].marker, 'click');
                 self.map.panTo(self.points()[i].position);
