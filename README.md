@@ -2,7 +2,7 @@
 Front-End Web Developer Nanodegree Project 5
 
 ### Project Overview  
-To develop a single page application featuring a map of St. Petersburg neighborhood using .  Add additional functionality to this map including highlighted locations, third-party data ([Foursquare API] (https://developer.foursquare.com/start)) about those locations and various ways to browse the content. The application is built on [Google Maps] (https://developers.google.com/maps/) with [Knockout.js framework] (http://knockoutjs.com/).
+To develop a single page application featuring a map of St. Petersburg neighborhood.  Add additional functionality to this map including highlighted locations, third-party data ([Foursquare API] (https://developer.foursquare.com/start)) about those locations and various ways to browse the content. The application is built on [Google Maps] (https://developers.google.com/maps/) with [Knockout.js framework] (http://knockoutjs.com/).
 
 ### Intructions on how to run the application 
 1. Visit my [Github page] (http://qqyoungqq.github.io/p5-neighborhood-map-review/)
